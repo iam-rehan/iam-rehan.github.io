@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @iam-rehan
 - 👀 I’m interested in ...Android And Java
-- 🌱 I’m currently learning ... B.Tech In Cumputer Science
+- 🌱 I’m currently persuing ... B.Tech In Cumputer Science
 - 💞️ I’m looking to collaborate on ...Projects in Android
 - 📫 How to reach me ...IG:iam_rehan__khan
                         Mail:rkhan9587@gmail.com

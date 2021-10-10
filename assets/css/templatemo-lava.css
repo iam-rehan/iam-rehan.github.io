@@ -176,6 +176,22 @@ a.main-button {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+.headingdiv{
+  font-size: 14px;
+  border-radius: 0px;
+  padding: 15px 25px;
+  background-color: #f4813f;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 
 a.main-button:hover {
   background-color: #f1556a;
@@ -762,6 +778,10 @@ about
   padding: 60px 30px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.aligntocenter{
+  text-align: center;
+  
 }
 
 .features-item h2 {

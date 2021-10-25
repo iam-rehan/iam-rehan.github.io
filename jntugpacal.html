@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNTU GPA</title>
+    <style>
+     table {
+        margin: 50px;
+        border-collapse: collapse;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    } */
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: #16a085;
+        color: #fff;
+    }
+    
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    /* tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    } */
+    
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 90%;
+        }
+    }
+</style>
+    <style>
+       body{
+           display: grid;
+           justify-content: center;
+           justify-items: center;
+       }
+       .maindiv{
+           width: 500px;
+           box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+           border: 2px solid gray;
+           border-radius: 10px;
+           padding: 20px;
+       }
+       .card{
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+       }
+       #creditform{
+        display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+       }
+
+       
+        input{
+            border: none;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 150px;
+            background: #f2f2f2;
+            border-radius: 3px;
+            padding: 12px;
+            margin: 20px;
+           
+        }
+        button{
+            border: none;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 150px;
+            background: black;
+            color: white;
+            border-radius: 3px;
+            padding: 12px;
+            margin: 20px;
+        }
+        .centerbtn{
+            display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+        .headbox{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="maindiv">
+       <div class="headbox">
+           <h1>JNTU GPA CALCULATER</h1>
+       </div>
+   
+    <div class="forms">
+        <div class="card">
+        <div class="totalsubjects">
+            <input type="text" id="subs" placeholder="Enter total subjects">
+            <button class="button" onclick="add_subject()">ADD SUBJECT</button>
+        </div>
+        </div>
+        <form id="creditform">
+           
+         
+        </form>
+       <div class="centerbtn">
+       
+        <button class="button" onclick="calculate()">CALCULATE GPA</button>
+       </div>
+       
+    </div>
+</div>
+<div class="gradesclass">
+    <table>
+        <tr id="header">
+            <th>Letter Grades</th>
+            <th>Grade Points</th>
+           
+        </tr>
+        <tr>
+            <td>O </td>
+            <td>10 </td>
+            
+        </tr>
+        <tr>
+            <td>A+ </td>
+            <td>9 </td>
+            
+        </tr>
+        <tr>
+            <td>A </td>
+            <td>8 </td>
+
+        </tr>
+        <tr>
+            <td>B+ </td>
+            <td>7 </td>
+            
+
+        </tr>
+        <tr>
+            <td>B </td>
+            <td>6 </td>
+           
+
+        </tr>
+        <tr>
+            <td>C </td>
+            <td>5 </td>
+        </tr>
+        <tr>
+            <td>F </td>
+            <td>0 </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+<script>
+    var counter=1;
+function add_subject(){
+    var subs = parseInt(document.getElementById("subs").value);
+
+   
+       var form=document.getElementById('creditform');
+       for(i=1;i<=subs;i++){
+        html=' <div class="card">\
+           <div class="borderbox">\
+               <input type="text" id="grade'+i+'" placeholder="Enter grades">\
+           </div>\
+           <div class="borderbox">\
+               <input type="text" id="credit'+i+'" placeholder="Enter credits">\
+               </div>\
+       </div>'
+        form.innerHTML+=html;
+       counter=i;
+    }
+      
+      
+      
+}
+function calculate(){
+           var subs=parseInt(document.getElementById("subs").value);
+           var gpa=0;
+           var g =0;
+           var c = 0;
+           var ccounter=0;
+           for(i=1;i<=subs;i++){
+               var grades =parseInt(document.getElementById("grade"+i+"").value);
+               var c=parseFloat(document.getElementById("credit"+i+"").value);
+               ccounter+=c;
+               gpa+=grades*c;
+           }
+           alert("Your GPA is : "+gpa/ccounter);
+       }
+</script>
+</html>

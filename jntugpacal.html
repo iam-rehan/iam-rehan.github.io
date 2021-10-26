@@ -44,11 +44,6 @@
         box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
     } */
     
-    @media only screen and (max-width: 768px) {
-        table {
-            width: 90%;
-        }
-    }
 </style>
     <style>
        body{
@@ -86,6 +81,10 @@
             margin: 20px;
            
         }
+        input:hover{
+            border-radius: 10px;
+            border: 2px solid #16a085;
+        }
         button{
             border: none;
             -webkit-appearance: none;
@@ -97,6 +96,9 @@
             padding: 12px;
             margin: 20px;
         }
+        button:hover{
+            background-color: #16a085;
+        }
         .centerbtn{
             display: flex;
            justify-content: center;
@@ -105,6 +107,25 @@
         .headbox{
             text-align: center;
         }
+        @media only screen and (max-width: 768px) {
+         
+            .maindiv{
+                    width: 300px;
+                    padding: 20px;
+            }
+            h1{
+                font-size: small;
+            }
+            button{
+                width: 80px;
+                font-size: 10px;
+            }
+            input{
+                width: 80px;
+                font-size: 10px;
+            }
+        }
+    
         
     </style>
 </head>
@@ -112,7 +133,7 @@
    
     <div class="maindiv">
        <div class="headbox">
-           <h1>JNTU GPA CALCULATER</h1>
+           <h1>JNTU GPA CALCULATOR</h1>
        </div>
    
     <div class="forms">

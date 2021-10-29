@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rehan's resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: linear-gradient(#f00,#f0f); */
+             background: #161623; 
+            /* background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+            font-family: 'Montserrat', sans-serif;
+        }
+       
+       
+        h1,h2,h3,h4,h5{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 30px;
+        }
+       h4{
+           font-size: 18px;
+           font-weight: 500;
+       }
+       span{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 40px;
+       }
+        .resumecontainer{
+            width: 60%;
+            margin-top: 20px;
+        }
+        .resumecard{
+            margin-top: 20px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+       .head{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-left:20px ;
+           padding-right: 20px;
+       }
+        .headleft h1{
+            font-style: bold;
+            font-size: 70px;
+            line-height: normal;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .headright h4{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-style: bold;
+            font-weight: 500;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+        }
+        .bottomright{
+            width: 450px;
+        }
+        .discription{
+            width: 300px;
+           
+            
+        }
+        .keycompetencies{
+            width: 400px;
+            line-height: 30px;
+        }
+        .bottomcenter{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .bottomcenter button{
+            border: none;
+            background: none;
+            font-family: 'Montserrat' sans-serif;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+        }
+        .bottomcenter button:hover{
+            background: black;
+            border-radius: 10px;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #t{
+            text-align: center;
+        }
+        .bgshape{
+            width: 400px;
+            height: 400px;
+            margin: 30px;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            z-index: -1;
+            position: absolute;
+            background-image: linear-gradient(#f00,#f0f);
+            animation: moving 3s infinite alternate-reverse;
+        }
+        .bgshapetwo{
+            width: 400px;
+            height: 400px;
+            margin: 30px;
+            right: 0;
+            border-radius: 50%;
+            z-index: -1;
+            position: absolute;
+            background-image: linear-gradient(#f00,#f0f);
+            animation: moving 3s infinite alternate-reverse;
+           
+        }
+        @keyframes moving {
+            100%{
+                
+                margin-top: 50%;
+                border-radius: 0%;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="bgshape"></div>
+   
+    <div class="resumecontainer">
+        <h2 id="t">MY RESUME</h2>
+        <div class="resumecard">
+            <div class="head">
+                <div class="headleft">
+                    <h1>REHAN <br> KHAN</h1>
+                </div>
+                <div class="headright">
+                    <h4>rkhan9587@gmail.com</h4>
+                    <br>
+                    <h4>+91 9014719555</h4>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottomleft">
+                    <div class="discription">
+                        <h2>PERSONAL SUMMARY</h2><br>
+                        <h4>I am a passionate computer
+                            science student seeking to use
+                            my development and coding
+                            skills. possess over 2 year of
+                            hands - on experience building
+                            and testing application's for
+                            android.
+                            </h4>
+                    </div>
+                    <br>
+                    
+                    <div class="academics">
+                        <h2>ACADEMIC BACKGROUND</h2>
+                        <br>
+                        <h4><span>Lords Institute of Engineering and Technology</span><br>
+                            B.tech in Computer science and engineering<br>
+                            July 2018 - present<br>
+                            -GPA: 6.50<br>
+                            <span>Narayana Junior College</span><br>
+                            
+                            Intermediate | June 2016 - March 2018<br>
+                            Course MPC<br>
+                            - GPA: 6.9<br>
+                           <span>VIP School</span>
+                           <h4>SSC( 10th ) | June 2015 - March 2016<br>
+                            - GPA: 7.0</h4>
+                            
+                    </div>
+                    <br>
+                    <div class="extra">
+                        <h2>EXTRA CURRICULAR
+                            ACTIVITIES</h2>
+                            <br>
+                            <h4>-Swimming<br>
+                                -Running<br>
+                                -GYM<br>
+                                -and Coding.</h4>
+                    </div>
+                </div>
+                <div class="bottomright">
+                    <div class="keycompetencies">
+                        <h2>KEY COMPETENCIES</h2>
+                        <br>
+                        <h4>
+                            <span> Languages:</span> C, C++, Java,
+                                Java Script, python.<br>
+                                <span> Databases :</span> FireBase , Sql .
+                                <br> <span> Technologies:</span> Android,Web,
+                                Github, Machine learning,Iot.
+                                <br><span>  Applications:</span> Android studio,
+                                Visual studio code, Photoshop,
+                                Lightroom, and many more.
+                        </h4>
+                    </div>
+                    <br>
+                    <div class="personalprojects">
+                        <h2>PERSONAL PROJECTS</h2><br>
+                        <h4><span>My College App</span><br>
+
+                             Application is for Downloading
+                            Books,Discussions,Managing Events In College.
+                            it uses Firebase authentication and
+                            firebase database for backend
+                            </h4>
+                            <h4><span>Furniture App</span><br>
+                              This is a personal business catalog application used
+                                to view,share and display products.
+                                It also support offline functionality.
+                                it uses firebase database in backend.
+                                it uses firebase authentication for login<br>
+                                <span>iam-rehan.github.io</span><br>
+                                portfolio<br>
+                                Build my portfolio using html css .<br>
+                                Using github in backend and to manage hosting
+                            </h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottomcenter">
+                <div class="links">
+
+                </div>
+                <button>Download</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".resumecard"), {
+		max: 5,
+		speed: 300,
+        glare: true,
+        "max-glare":0.5,
+
+	});
+    </script> -->
+    <div class="bgshapetwo"></div>
+</body>
+</html>

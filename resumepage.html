@@ -13,6 +13,9 @@
             margin: 0;
             padding: 0;
         }
+        html{
+            font-size: 62.5%;
+        }
         body{
             display: flex;
             justify-content: center;
@@ -29,29 +32,54 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
         h1,h2,h3,h4,h5{
             color: white;
             font-family: 'Montserrat', sans-serif;
-            line-height: 30px;
+            line-height: 3rem;
+        }
+        h2{
+            font-size: 2.4rem;
         }
        h4{
-           font-size: 18px;
+           font-size: 1.8rem;
            font-weight: 500;
        }
        span{
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 4rem;
+       }
+       .backbutton{
+          
+           position: absolute;
+           top: 0;
+           left: 0;
+           padding: 1rem 2rem;
+           margin-top: 2rem;
+           margin-left: 2rem;
+        box-shadow: 2rem 2rem 50rem rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1rem solid rgba(255, 255, 255, 0.5);
+            border-left: 1rem solid rgba(255, 255, 255, 0.5);
+            border-radius: 1rem;
+            backdrop-filter: blur(.5rem);
+            
+       }
+       .backbutton a{
+        text-decoration: none;
+           font-family: 'Montserrat' sans-serif;
+           color: white;
        }
         .resumecontainer{
             /* width: 60%; */
-            margin-top: 20px;
+            
+            margin-top: 2rem;
         }
         .resumecard{
-            margin-top: 20px;
-            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            margin-top: 2rem;
+            box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
             background: rgba(255, 255, 255, 0.1);
-            border-top: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 20px;
-            backdrop-filter: blur(5px);
+            border-top: .1rem solid rgba(255, 255, 255, 0.5);
+            border-left: .1rem solid rgba(255, 255, 255, 0.5);
+            border-radius: 2rem;
+            backdrop-filter: blur(.5rem);
             
         }
 
@@ -60,54 +88,62 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
            justify-content: space-between;
            align-items: center;
            
-           padding-left:20px ;
-           padding-right: 20px;
+           padding-left:2rem ;
+           padding-right: 2rem;
        }
         .headleft h1{
             font-style: bold;
-            font-size: 70px;
+            font-size: 7rem;
             line-height: normal;
             color: white;
             font-family: 'Montserrat', sans-serif;
         }
         .headright{
-            width: 250px;
+            width: 25rem;
         }
         .headright h4{
             color: white;
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 2rem;
             font-style: bold;
             font-weight: 500;
+        }
+        .line{
+           margin-left: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: .2rem;
+            border-radius: .1rem;
+            margin-right: 20px;
         }
         .bottom{
             display: flex;
             justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin: 10px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 1rem;
+            margin-top: 2rem;
 
         }
         .bottomleft{
-            width: 400px;
+            width: 40rem;
         }
         .bottomright{
-            width: 400px;
+            width: 40rem;
         }
         .discription{
-            width: 300px;
+            width: 30rem;
            
             
         }
         .keycompetencies{
-            width: 400px;
-            line-height: 30px;
+            width: 40rem;
+            line-height: 3rem;
         }
         .bottomcenter{
             display: flex;
             justify-content: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
         }
         .bottomcenter a{
             border: none;
@@ -115,40 +151,39 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
             text-decoration: none;
             font-family: 'Montserrat' sans-serif;
             color: white;
-            font-size: 20px;
-            padding: 10px 20px 10px 20px;
-            margin: 10px; 
+            font-size: 2rem;
+            padding: 1rem 2rem 1rem 2rem;
+            margin: 1rem; 
         }
         .bottomcenter a:hover{
             background: black;
-            border-radius: 10px;
+            border-radius: 1rem;
             color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
         #t{
             text-align: center;
         }
         .bgshape{
-            width: 400px;
-            height: 400px;
-            margin: 30px;
-           
+            width: 30rem;
+            height: 30rem;
+            margin: 3rem;
             border-radius: 50%;
             z-index: -1;
             position: absolute;
             background-image: linear-gradient(#f00,#f0f);
-            animation: moving 2s infinite alternate-reverse;
+            
         }
         .c1{
             left: 0;
             top: 0;
-            margin-top: 30%;
+            animation: moving 2s infinite alternate-reverse;
         }
         .c2{
-           bottom: 0;
+           top: 0;
             right: 0;
            
             animation: movingd 2s infinite alternate-reverse;
@@ -157,130 +192,47 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
         @keyframes moving {
             100%{
                 
-                margin-top: 50%;
+                margin-top: 75%;
+                border-radius: 50%;
+            }
+            0%{
                 border-radius: 0%;
             }
-           
+          
         }
         @keyframes movingd {
-            100%{
+            0%{
                 
-                margin-bottom: 50%;
+                margin-top: 75%;
                 border-radius: 0%;
             }
            
         }
-        @media only screen and (max-width: 800px){
-            body{
-                margin: 0;
-                padding: 0;
-
-            }
-            .resumecontainer{
-                width: 350px;
-                margin-top: 20px;
-                padding: 0%;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                
-                /* margin-left: 20px;
-                margin-right: 20px; */
-                
-            }
-
-            .resumecard{
-               padding: 0;
-              
-            }
-            h1,h2,h3,h4,h5{
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 10px;
-        }
-        
-        .headright{
-            width: 130px;
-        }
-        .headleft h1{
-            font-size: 30px;
-        }
-        .headright h4{
-            font-size: 12px;
-        }
-        h2{
-            font-size: 15px;
-            line-height: 15px;
-        }
-       h4{
-           font-size: 10px;
-           font-weight: 300;
-           line-height: 12px;
-       }
-       span{
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 20px;
-       }
-       .bottom{
-           padding: 0;
-       }
-       .bottomright{
-           width: 150px;
-           padding: 0%;
-           
-       }
-       .keycompetencies{
-            width: 150px;
-            line-height: 10px;
-        }
-        .bottomcenter{
-            margin: 0;
-            padding: 0;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-       .bottomleft{
-           width: 200px;
-           padding: 0;
-       }
-       .discription{
-           width: 150px;
-       }
-       .bgshape{
-           width: 20px;
-           height: 20px;
-       }
-       .bottomcenter a{
-            border: none;
-            background: none;
-            text-decoration: none;
-            font-family: 'Montserrat' sans-serif;
-            color: white;
-            font-size: 12px;
-            padding: 10px 20px 10px 20px;
-            margin: 10px; 
-        }
-        .bottomcenter a:hover{
-            background: black;
-            border-radius: 10px;
-            color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-       .c1{
-           margin-top: 0%;
-       }
-       .c2{
-           margin-bottom: -5%;
-       }
-       
-        }
+     
+      @media only screen and (max-width: 80rem){
+          html{
+              font-size: 63%;
+          }
+          .bgshape{
+              width: 10rem;
+              height: 10rem;
+          }
+      }
+      @media only screen and (max-width: 60rem){
+          html{
+              font-size: 25%;
+          }
+          .bgshape{
+              width: 10rem;
+              height: 10rem;
+          }
+      }
     </style>
 </head>
 <body>
+    <div class="resumecard backbutton">
+        <a href="/index.html">HOME</a>
+    </div>
     <div class="bgshape c1"></div>
    
     <div class="resumecontainer">
@@ -295,6 +247,9 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
                     <br>
                     <h4>+91 9014719555</h4>
                 </div>
+            </div>
+            <div class="line">
+
             </div>
             <div class="bottom">
                 <div class="bottomleft">
@@ -387,16 +342,17 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
             </div>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <div class="bgshape c2"></div>
+     <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".resumecard"), {
-		max: 5,
-		speed: 300,
+		 max: 1,
+		 speed: 100,
         glare: true,
-        "max-glare":0.5,
+        "max-glare":0.1,
 
 	});
-    </script> -->
-    <div class="bgshape c2"></div>
+    </script>
+   
 </body>
 </html>

@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5%;
+}
+.headerbg{
+    background: rgb(244,129,63);
+    height: 8rem;
+}
+/* sorting css */
+input{
+    border: none;
+    height: 3rem;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+input:hover{
+    border: 1px solid #0055a5;
+}
+select{
+    height: 3rem;
+    margin: 1rem;
+}
+option{
+    height: 3rem;
+
+}
+.submit{
+    border: none;
+    height: 3rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background: #fff;
+}
+.submit:hover{
+    background: #000;
+    color: #fff;
+}
+.head{
+    background: #0055a5;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+   
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.element{
+    width: 5rem;
+    height: 5rem;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-top: .1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+

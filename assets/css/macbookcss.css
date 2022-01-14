@@ -1,0 +1,286 @@
+.logocontainer{
+  display: flex;
+  align-items: center;
+}
+.crownlogo{
+  background-image: url(/assets/images/crownlogo.png);
+  width: 220px;
+  height: 230px;
+  background-position: center;
+  background-size: 550px;
+}
+.sellerslogo{
+  background-image: url(/assets/images/sellerslogo.png);
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.macbody{
+  background: rgba(0, 0, 0, 0) radial-gradient(circle, #fff 20%, #999) repeat scroll 0 0;
+}
+
+.macbook {
+  padding: 4% 6%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.macscreen {
+  background: #000;
+  border-radius: 3% 3% 0.5% 0.5% / 5%;
+  margin: 0 auto;
+  /* for aspect ratio */
+  position: relative;
+  width: 80%;
+}
+
+.macscreen:before {
+  border: 2px solid #cacacc;
+  border-radius: 3% 3% 0.5% 0.5% / 5%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
+  content: "";
+  display: block;
+  /* for aspect ratio ~67:100 */
+  padding-top: 67%;
+}
+
+.macscreen:after {
+  content: "";
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0.75%;
+  left: 0.5%;
+  padding-top: 1%;
+  width: 99%;
+}
+
+.viewport {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 4.3% 3.2%;
+  background: #333;
+}
+
+.base {
+  /* for aspect ratio */
+  position: relative;
+  width: 100%;
+}
+
+.base:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~33:1000*/
+  padding-top: 3.3%;
+  /* stylin */
+  background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%);
+  border-radius: 0 0 10% 10%/ 0 0 50% 50%;
+}
+
+.base::after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) 0.5%, rgba(0, 0, 0, 0.4) 3.3%, transparent 15%, rgba(255, 255, 255, 0.8) 50%, transparent 85%, rgba(0, 0, 0, 0.4) 96.7%, rgba(255, 255, 255, 0.8) 99.5%, rgba(0, 0, 0, 0.5) 100%);
+  content: "";
+  height: 53%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.notch {
+  background: #ddd;
+  border-radius: 0 0 7% 7% / 0 0 95% 95%;
+  box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3.5%;
+  z-index: 2;
+  /* for aspect ratio */
+  position: relative;
+  width: 14%;
+}
+
+.notch:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~1:10 */
+  padding-top: 10%;
+}
+
+
+/* Screenshot Hover Scroll Additions
+-------------------------------------------------------------- */
+
+.macbook .viewport {
+  transition: background-position 3s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.macbook:hover .viewport {
+  background-position: 0 100%;
+}
+
+.macbook .viewport:after {
+  background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* main section search bar */
+.searchbox{
+  background-color: #eaeced;
+  height:fit-content;
+  width: 40ch;
+  border-radius: 20px;
+  padding:0 20px 0 20px;
+  border:2px solid #4B4B4F;
+}
+
+.typewrapper {
+  height: auto;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 18ch;
+  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  
+  
+
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* type section css */
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+
+.typesection {
+  width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+  font-family: 'Lily Script One';
+}
+
+.typecontainer{
+  display:flex;  
+  width:95vw;
+}
+.headtype{
+  background-color: #fff;
+  color: #03446A;
+  letter-spacing: 2px;
+  font-family: 'Lily Script One';
+  font-size: 40px;
+  margin: 10px;
+  text-align: center; 
+}
+.typetext{
+  background-color: #fff;
+  color: #03446A;
+  letter-spacing: 5px;
+  height: 80vh;
+  width: 13vh;
+  font-family: 'Lily Script One';
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.tapme{
+  color: #03446A;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: medium;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.panel:hover .tapme {
+opacity: 1;
+}
+.panel.active:hover .tapme{
+opacity: 0;
+}
+
+.panel{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:80vh;
+  border-radius: 50px;
+  flex:0.5;
+  position:relative;
+  transition: flex 0.5s ease-in;
+  color:#03446A;
+  cursor:pointer;
+  margin:10px;
+  
+}
+.panel.active .typetext{
+  opacity: 0;
+  transition: opacity 0.4s ease-out 0.4s;
+}
+
+.panel h3{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  opacity:0;
+}
+
+.panel.active{
+  flex:5;
+}
+
+.panel.active h3{
+  opacity:1;
+   transition: opacity 0.4s ease-in 0.4s;
+}
+
+@media(max-width:480px){
+  .container{
+      width:100vw;
+  }
+
+  .panel:nth-of-type(4),.panel:nth-of-type(5){
+      display:none;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="assets/css/portfoliocss.css">
+
+</head>
+<body>
+    <div class="head">
+    <input id="num" type="text" placeholder="Enter number of elements">
+    <select id="sortingtechnique">
+        <option value="Select">Select sorting algo</option>
+        <option value="quicksort">Quick Sort</option>
+        <option value="insertionsort">Insertion Sort</option>
+        <option value="selectionsort">Selection Sort</option>
+        <option value="mergesort">Merge Sort</option>
+        
+    </select>
+    <button class="submit" onclick="populate()" >Submit</button>
+</div>
+<div class="mid">
+   <form id="form">
+
+   </form>
+</div>
+<div class="head">
+    <button class="submit" onclick="sort()">Run</button>
+</div>
+</body>
+<script>
+  
+   
+    function populate(){
+       
+    var form=document.getElementById('form');
+        var num= parseInt(document.getElementById("num").value);
+        for(i=0;i<num;i++){
+            html=' <div class="element" id="e'+i+'">\
+        <h3 id="eletxt">'+i+'</h3>\
+    </div>'
+            form.innerHTML+=html;
+        }
+       
+    }
+    function sort(){
+        var num= parseInt(document.getElementById("num").value);
+        for(i=0;i<num;i++){
+            document.getElementById("e"+i+"").style.background="#005505";
+           setTimeout(switchelement(i) , 1000);
+        }
+        function switchelement(i){
+        
+        document.getElementById("e"+i+"").style.background="#fff";
+    
+    
+}
+    }
+   
+</script>
+</html>
